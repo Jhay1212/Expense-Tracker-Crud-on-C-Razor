@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ji6P3u5ISal2FBTzAXKiDwG9xTAKyicy2w7N6xopp/Y=",
+  "Hash": "7sM1RpcHvYq971AHbgPwJHrkdemzcHSjmNfYcQeUKXg=",
   "Source": "AnimeTracker",
   "BasePath": "_content/AnimeTracker",
   "Mode": "Default",
@@ -59,12 +59,12 @@
       "OriginalItemSpec": "/home/jhay/crud/AnimeTracker/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
-      "Identity": "/home/jhay/crud/AnimeTracker/obj/Debug/net9.0/compressed/24zs3imaoc-qgolvgwoqp.gz",
+      "Identity": "/home/jhay/crud/AnimeTracker/obj/Debug/net9.0/compressed/24zs3imaoc-obx5hbmp7v.gz",
       "SourceId": "AnimeTracker",
       "SourceType": "Computed",
       "ContentRoot": "/home/jhay/crud/AnimeTracker/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/AnimeTracker",
-      "RelativePath": "AnimeTracker#[.{fingerprint=qgolvgwoqp}]?.styles.css.gz",
+      "RelativePath": "AnimeTracker#[.{fingerprint=obx5hbmp7v}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -73,8 +73,8 @@
       "RelatedAsset": "/home/jhay/crud/AnimeTracker/obj/Debug/net9.0/scopedcss/bundle/AnimeTracker.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "427ouwum5f",
-      "Integrity": "RAgLYlkINOTXFZz5Vh4vFHCRBL8HcVmB4NcaS85yMto=",
+      "Fingerprint": "z7594g8lqw",
+      "Integrity": "rwZF99jZRp053eveRBU08Yh/eZcEWuCDWlwl0Ft087o=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/jhay/crud/AnimeTracker/obj/Debug/net9.0/scopedcss/bundle/AnimeTracker.styles.css"
@@ -983,12 +983,12 @@
       "OriginalItemSpec": "/home/jhay/crud/AnimeTracker/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css"
     },
     {
-      "Identity": "/home/jhay/crud/AnimeTracker/obj/Debug/net9.0/compressed/qrk0qvsj1q-qgolvgwoqp.gz",
+      "Identity": "/home/jhay/crud/AnimeTracker/obj/Debug/net9.0/compressed/qrk0qvsj1q-obx5hbmp7v.gz",
       "SourceId": "AnimeTracker",
       "SourceType": "Computed",
       "ContentRoot": "/home/jhay/crud/AnimeTracker/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/AnimeTracker",
-      "RelativePath": "AnimeTracker#[.{fingerprint=qgolvgwoqp}]!.bundle.scp.css.gz",
+      "RelativePath": "AnimeTracker#[.{fingerprint=obx5hbmp7v}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -997,8 +997,8 @@
       "RelatedAsset": "/home/jhay/crud/AnimeTracker/obj/Debug/net9.0/scopedcss/projectbundle/AnimeTracker.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "427ouwum5f",
-      "Integrity": "RAgLYlkINOTXFZz5Vh4vFHCRBL8HcVmB4NcaS85yMto=",
+      "Fingerprint": "z7594g8lqw",
+      "Integrity": "rwZF99jZRp053eveRBU08Yh/eZcEWuCDWlwl0Ft087o=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/jhay/crud/AnimeTracker/obj/Debug/net9.0/scopedcss/projectbundle/AnimeTracker.bundle.scp.css"
@@ -1375,8 +1375,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "qgolvgwoqp",
-      "Integrity": "5tElesy7wmqNrNtZbZqQFHzKWbJ8gkkNrTBI8XrM1c8=",
+      "Fingerprint": "obx5hbmp7v",
+      "Integrity": "DGsA6guvp+v1KJmHq6LBpyEtD8wzuUZBTbUo3EHS8Zo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/jhay/crud/AnimeTracker/obj/Debug/net9.0/scopedcss/bundle/AnimeTracker.styles.css"
@@ -1396,8 +1396,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "qgolvgwoqp",
-      "Integrity": "5tElesy7wmqNrNtZbZqQFHzKWbJ8gkkNrTBI8XrM1c8=",
+      "Fingerprint": "obx5hbmp7v",
+      "Integrity": "DGsA6guvp+v1KJmHq6LBpyEtD8wzuUZBTbUo3EHS8Zo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/jhay/crud/AnimeTracker/obj/Debug/net9.0/scopedcss/projectbundle/AnimeTracker.bundle.scp.css"
@@ -2729,12 +2729,12 @@
   "Endpoints": [
     {
       "Route": "AnimeTracker.bundle.scp.css",
-      "AssetFile": "/home/jhay/crud/AnimeTracker/obj/Debug/net9.0/compressed/qrk0qvsj1q-qgolvgwoqp.gz",
+      "AssetFile": "/home/jhay/crud/AnimeTracker/obj/Debug/net9.0/compressed/qrk0qvsj1q-obx5hbmp7v.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001858736059"
+          "Quality": "0.001748251748"
         }
       ],
       "ResponseHeaders": [
@@ -2744,15 +2744,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "537"
+          "Value": "571"
         },
         {
           "Name": "ETag",
-          "Value": "\"RAgLYlkINOTXFZz5Vh4vFHCRBL8HcVmB4NcaS85yMto=\""
+          "Value": "\"rwZF99jZRp053eveRBU08Yh/eZcEWuCDWlwl0Ft087o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Aug 2025 15:03:19 GMT"
+          "Value": "Mon, 18 Aug 2025 08:19:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2772,13 +2772,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"5tElesy7wmqNrNtZbZqQFHzKWbJ8gkkNrTBI8XrM1c8=\""
+          "Value": "W/\"DGsA6guvp+v1KJmHq6LBpyEtD8wzuUZBTbUo3EHS8Zo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-5tElesy7wmqNrNtZbZqQFHzKWbJ8gkkNrTBI8XrM1c8="
+          "Value": "sha256-DGsA6guvp+v1KJmHq6LBpyEtD8wzuUZBTbUo3EHS8Zo="
         }
       ]
     },
@@ -2793,7 +2793,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1081"
+          "Value": "1155"
         },
         {
           "Name": "Content-Type",
@@ -2801,11 +2801,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"5tElesy7wmqNrNtZbZqQFHzKWbJ8gkkNrTBI8XrM1c8=\""
+          "Value": "\"DGsA6guvp+v1KJmHq6LBpyEtD8wzuUZBTbUo3EHS8Zo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Aug 2025 15:03:19 GMT"
+          "Value": "Mon, 18 Aug 2025 08:19:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2815,13 +2815,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-5tElesy7wmqNrNtZbZqQFHzKWbJ8gkkNrTBI8XrM1c8="
+          "Value": "sha256-DGsA6guvp+v1KJmHq6LBpyEtD8wzuUZBTbUo3EHS8Zo="
         }
       ]
     },
     {
       "Route": "AnimeTracker.bundle.scp.css.gz",
-      "AssetFile": "/home/jhay/crud/AnimeTracker/obj/Debug/net9.0/compressed/qrk0qvsj1q-qgolvgwoqp.gz",
+      "AssetFile": "/home/jhay/crud/AnimeTracker/obj/Debug/net9.0/compressed/qrk0qvsj1q-obx5hbmp7v.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2830,7 +2830,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "537"
+          "Value": "571"
         },
         {
           "Name": "Content-Type",
@@ -2838,11 +2838,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RAgLYlkINOTXFZz5Vh4vFHCRBL8HcVmB4NcaS85yMto=\""
+          "Value": "\"rwZF99jZRp053eveRBU08Yh/eZcEWuCDWlwl0Ft087o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Aug 2025 15:03:19 GMT"
+          "Value": "Mon, 18 Aug 2025 08:19:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2860,18 +2860,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-RAgLYlkINOTXFZz5Vh4vFHCRBL8HcVmB4NcaS85yMto="
+          "Value": "sha256-rwZF99jZRp053eveRBU08Yh/eZcEWuCDWlwl0Ft087o="
         }
       ]
     },
     {
-      "Route": "AnimeTracker.qgolvgwoqp.bundle.scp.css",
-      "AssetFile": "/home/jhay/crud/AnimeTracker/obj/Debug/net9.0/compressed/qrk0qvsj1q-qgolvgwoqp.gz",
+      "Route": "AnimeTracker.obx5hbmp7v.bundle.scp.css",
+      "AssetFile": "/home/jhay/crud/AnimeTracker/obj/Debug/net9.0/compressed/qrk0qvsj1q-obx5hbmp7v.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001858736059"
+          "Quality": "0.001748251748"
         }
       ],
       "ResponseHeaders": [
@@ -2881,15 +2881,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "537"
+          "Value": "571"
         },
         {
           "Name": "ETag",
-          "Value": "\"RAgLYlkINOTXFZz5Vh4vFHCRBL8HcVmB4NcaS85yMto=\""
+          "Value": "\"rwZF99jZRp053eveRBU08Yh/eZcEWuCDWlwl0Ft087o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Aug 2025 15:03:19 GMT"
+          "Value": "Mon, 18 Aug 2025 08:19:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2909,13 +2909,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"5tElesy7wmqNrNtZbZqQFHzKWbJ8gkkNrTBI8XrM1c8=\""
+          "Value": "W/\"DGsA6guvp+v1KJmHq6LBpyEtD8wzuUZBTbUo3EHS8Zo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "qgolvgwoqp"
+          "Value": "obx5hbmp7v"
         },
         {
           "Name": "label",
@@ -2923,12 +2923,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-5tElesy7wmqNrNtZbZqQFHzKWbJ8gkkNrTBI8XrM1c8="
+          "Value": "sha256-DGsA6guvp+v1KJmHq6LBpyEtD8wzuUZBTbUo3EHS8Zo="
         }
       ]
     },
     {
-      "Route": "AnimeTracker.qgolvgwoqp.bundle.scp.css",
+      "Route": "AnimeTracker.obx5hbmp7v.bundle.scp.css",
       "AssetFile": "/home/jhay/crud/AnimeTracker/obj/Debug/net9.0/scopedcss/projectbundle/AnimeTracker.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2938,7 +2938,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1081"
+          "Value": "1155"
         },
         {
           "Name": "Content-Type",
@@ -2946,11 +2946,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"5tElesy7wmqNrNtZbZqQFHzKWbJ8gkkNrTBI8XrM1c8=\""
+          "Value": "\"DGsA6guvp+v1KJmHq6LBpyEtD8wzuUZBTbUo3EHS8Zo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Aug 2025 15:03:19 GMT"
+          "Value": "Mon, 18 Aug 2025 08:19:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2960,7 +2960,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "qgolvgwoqp"
+          "Value": "obx5hbmp7v"
         },
         {
           "Name": "label",
@@ -2968,13 +2968,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-5tElesy7wmqNrNtZbZqQFHzKWbJ8gkkNrTBI8XrM1c8="
+          "Value": "sha256-DGsA6guvp+v1KJmHq6LBpyEtD8wzuUZBTbUo3EHS8Zo="
         }
       ]
     },
     {
-      "Route": "AnimeTracker.qgolvgwoqp.bundle.scp.css.gz",
-      "AssetFile": "/home/jhay/crud/AnimeTracker/obj/Debug/net9.0/compressed/qrk0qvsj1q-qgolvgwoqp.gz",
+      "Route": "AnimeTracker.obx5hbmp7v.bundle.scp.css.gz",
+      "AssetFile": "/home/jhay/crud/AnimeTracker/obj/Debug/net9.0/compressed/qrk0qvsj1q-obx5hbmp7v.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2983,7 +2983,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "537"
+          "Value": "571"
         },
         {
           "Name": "Content-Type",
@@ -2991,11 +2991,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RAgLYlkINOTXFZz5Vh4vFHCRBL8HcVmB4NcaS85yMto=\""
+          "Value": "\"rwZF99jZRp053eveRBU08Yh/eZcEWuCDWlwl0Ft087o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Aug 2025 15:03:19 GMT"
+          "Value": "Mon, 18 Aug 2025 08:19:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3013,7 +3013,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "qgolvgwoqp"
+          "Value": "obx5hbmp7v"
         },
         {
           "Name": "label",
@@ -3021,18 +3021,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-RAgLYlkINOTXFZz5Vh4vFHCRBL8HcVmB4NcaS85yMto="
+          "Value": "sha256-rwZF99jZRp053eveRBU08Yh/eZcEWuCDWlwl0Ft087o="
         }
       ]
     },
     {
-      "Route": "AnimeTracker.qgolvgwoqp.styles.css",
-      "AssetFile": "/home/jhay/crud/AnimeTracker/obj/Debug/net9.0/compressed/24zs3imaoc-qgolvgwoqp.gz",
+      "Route": "AnimeTracker.obx5hbmp7v.styles.css",
+      "AssetFile": "/home/jhay/crud/AnimeTracker/obj/Debug/net9.0/compressed/24zs3imaoc-obx5hbmp7v.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001858736059"
+          "Quality": "0.001748251748"
         }
       ],
       "ResponseHeaders": [
@@ -3042,15 +3042,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "537"
+          "Value": "571"
         },
         {
           "Name": "ETag",
-          "Value": "\"RAgLYlkINOTXFZz5Vh4vFHCRBL8HcVmB4NcaS85yMto=\""
+          "Value": "\"rwZF99jZRp053eveRBU08Yh/eZcEWuCDWlwl0Ft087o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Aug 2025 15:03:19 GMT"
+          "Value": "Mon, 18 Aug 2025 08:19:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3070,13 +3070,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"5tElesy7wmqNrNtZbZqQFHzKWbJ8gkkNrTBI8XrM1c8=\""
+          "Value": "W/\"DGsA6guvp+v1KJmHq6LBpyEtD8wzuUZBTbUo3EHS8Zo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "qgolvgwoqp"
+          "Value": "obx5hbmp7v"
         },
         {
           "Name": "label",
@@ -3084,12 +3084,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-5tElesy7wmqNrNtZbZqQFHzKWbJ8gkkNrTBI8XrM1c8="
+          "Value": "sha256-DGsA6guvp+v1KJmHq6LBpyEtD8wzuUZBTbUo3EHS8Zo="
         }
       ]
     },
     {
-      "Route": "AnimeTracker.qgolvgwoqp.styles.css",
+      "Route": "AnimeTracker.obx5hbmp7v.styles.css",
       "AssetFile": "/home/jhay/crud/AnimeTracker/obj/Debug/net9.0/scopedcss/bundle/AnimeTracker.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3099,7 +3099,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1081"
+          "Value": "1155"
         },
         {
           "Name": "Content-Type",
@@ -3107,11 +3107,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"5tElesy7wmqNrNtZbZqQFHzKWbJ8gkkNrTBI8XrM1c8=\""
+          "Value": "\"DGsA6guvp+v1KJmHq6LBpyEtD8wzuUZBTbUo3EHS8Zo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Aug 2025 15:03:19 GMT"
+          "Value": "Mon, 18 Aug 2025 08:19:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3121,7 +3121,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "qgolvgwoqp"
+          "Value": "obx5hbmp7v"
         },
         {
           "Name": "label",
@@ -3129,13 +3129,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-5tElesy7wmqNrNtZbZqQFHzKWbJ8gkkNrTBI8XrM1c8="
+          "Value": "sha256-DGsA6guvp+v1KJmHq6LBpyEtD8wzuUZBTbUo3EHS8Zo="
         }
       ]
     },
     {
-      "Route": "AnimeTracker.qgolvgwoqp.styles.css.gz",
-      "AssetFile": "/home/jhay/crud/AnimeTracker/obj/Debug/net9.0/compressed/24zs3imaoc-qgolvgwoqp.gz",
+      "Route": "AnimeTracker.obx5hbmp7v.styles.css.gz",
+      "AssetFile": "/home/jhay/crud/AnimeTracker/obj/Debug/net9.0/compressed/24zs3imaoc-obx5hbmp7v.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3144,7 +3144,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "537"
+          "Value": "571"
         },
         {
           "Name": "Content-Type",
@@ -3152,11 +3152,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RAgLYlkINOTXFZz5Vh4vFHCRBL8HcVmB4NcaS85yMto=\""
+          "Value": "\"rwZF99jZRp053eveRBU08Yh/eZcEWuCDWlwl0Ft087o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Aug 2025 15:03:19 GMT"
+          "Value": "Mon, 18 Aug 2025 08:19:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3174,7 +3174,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "qgolvgwoqp"
+          "Value": "obx5hbmp7v"
         },
         {
           "Name": "label",
@@ -3182,18 +3182,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-RAgLYlkINOTXFZz5Vh4vFHCRBL8HcVmB4NcaS85yMto="
+          "Value": "sha256-rwZF99jZRp053eveRBU08Yh/eZcEWuCDWlwl0Ft087o="
         }
       ]
     },
     {
       "Route": "AnimeTracker.styles.css",
-      "AssetFile": "/home/jhay/crud/AnimeTracker/obj/Debug/net9.0/compressed/24zs3imaoc-qgolvgwoqp.gz",
+      "AssetFile": "/home/jhay/crud/AnimeTracker/obj/Debug/net9.0/compressed/24zs3imaoc-obx5hbmp7v.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001858736059"
+          "Quality": "0.001748251748"
         }
       ],
       "ResponseHeaders": [
@@ -3203,15 +3203,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "537"
+          "Value": "571"
         },
         {
           "Name": "ETag",
-          "Value": "\"RAgLYlkINOTXFZz5Vh4vFHCRBL8HcVmB4NcaS85yMto=\""
+          "Value": "\"rwZF99jZRp053eveRBU08Yh/eZcEWuCDWlwl0Ft087o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Aug 2025 15:03:19 GMT"
+          "Value": "Mon, 18 Aug 2025 08:19:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3231,13 +3231,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"5tElesy7wmqNrNtZbZqQFHzKWbJ8gkkNrTBI8XrM1c8=\""
+          "Value": "W/\"DGsA6guvp+v1KJmHq6LBpyEtD8wzuUZBTbUo3EHS8Zo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-5tElesy7wmqNrNtZbZqQFHzKWbJ8gkkNrTBI8XrM1c8="
+          "Value": "sha256-DGsA6guvp+v1KJmHq6LBpyEtD8wzuUZBTbUo3EHS8Zo="
         }
       ]
     },
@@ -3252,7 +3252,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1081"
+          "Value": "1155"
         },
         {
           "Name": "Content-Type",
@@ -3260,11 +3260,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"5tElesy7wmqNrNtZbZqQFHzKWbJ8gkkNrTBI8XrM1c8=\""
+          "Value": "\"DGsA6guvp+v1KJmHq6LBpyEtD8wzuUZBTbUo3EHS8Zo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Aug 2025 15:03:19 GMT"
+          "Value": "Mon, 18 Aug 2025 08:19:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3274,13 +3274,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-5tElesy7wmqNrNtZbZqQFHzKWbJ8gkkNrTBI8XrM1c8="
+          "Value": "sha256-DGsA6guvp+v1KJmHq6LBpyEtD8wzuUZBTbUo3EHS8Zo="
         }
       ]
     },
     {
       "Route": "AnimeTracker.styles.css.gz",
-      "AssetFile": "/home/jhay/crud/AnimeTracker/obj/Debug/net9.0/compressed/24zs3imaoc-qgolvgwoqp.gz",
+      "AssetFile": "/home/jhay/crud/AnimeTracker/obj/Debug/net9.0/compressed/24zs3imaoc-obx5hbmp7v.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3289,7 +3289,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "537"
+          "Value": "571"
         },
         {
           "Name": "Content-Type",
@@ -3297,11 +3297,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RAgLYlkINOTXFZz5Vh4vFHCRBL8HcVmB4NcaS85yMto=\""
+          "Value": "\"rwZF99jZRp053eveRBU08Yh/eZcEWuCDWlwl0Ft087o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Aug 2025 15:03:19 GMT"
+          "Value": "Mon, 18 Aug 2025 08:19:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3319,7 +3319,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-RAgLYlkINOTXFZz5Vh4vFHCRBL8HcVmB4NcaS85yMto="
+          "Value": "sha256-rwZF99jZRp053eveRBU08Yh/eZcEWuCDWlwl0Ft087o="
         }
       ]
     },

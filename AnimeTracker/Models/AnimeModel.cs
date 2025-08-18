@@ -1,13 +1,22 @@
+using System;
+using System.ComponentModel.DataAnnotations;
+
 namespace AnimeTracker.Models;
 
 public class Anime
 {
-    public int Id;
+    public int Id { get; set; }
+
+    [Required]
     public required string Name { get; set; }
+
+    [Required]
     public required string Genre { get; set; }
+
+    [Required]
     public required bool Status { get; set; }
 
-    public DateOnly LastWatched { get; set; }
+    public DateOnly? LastWatched { get; set; }
 
     public Anime(string name, string genre)
     {

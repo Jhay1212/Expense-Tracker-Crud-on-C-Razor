@@ -1,10 +1,18 @@
+using Microsoft.EntityFrameworkCore;
+using AnimeTracker.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        new MySqlServerVersion(new Version(8, 0, 39))
+    ));
+
 builder.Services.AddControllersWithViews();
 
-var app = builder.Build();
 
+var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
@@ -20,15 +28,32 @@ app.UseAuthorization();
 
 app.MapStaticAssets();
 
-app.MapControllerRoute(
+
+app.UseEndpoints(endpoint =>
+{
+
+    _ = endpoint.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
 
-app.MapControllerRoute(
+    _ = app.MapControllerRoute(
     name: "anime",
-    pattern: "{controller=Anime}/{action=Index}/"
+    pattern: "{controller=Anime}/{action=Index}/{id?}"
 ).WithStaticAssets();
+
+_ = app.MapControllerRoute(
+    name: "user",
+    pattern: "{controller=User}/{action=Signup}/{id?}"
+).WithStaticAssets();
+
+
+
+
+});
+
+
+
 
 
 app.Run();

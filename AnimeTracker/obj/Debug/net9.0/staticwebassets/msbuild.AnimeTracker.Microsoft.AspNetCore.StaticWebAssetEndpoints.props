@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
     <StaticWebAssetEndpoint Include="_content/AnimeTracker/AnimeTracker.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AnimeTracker.qgolvgwoqp.bundle.scp.css'))</AssetFile>
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AnimeTracker.obx5hbmp7v.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-5tElesy7wmqNrNtZbZqQFHzKWbJ8gkkNrTBI8XrM1c8="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1081"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00225tElesy7wmqNrNtZbZqQFHzKWbJ8gkkNrTBI8XrM1c8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Aug 2025 15:03:19 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-DGsA6guvp\u002Bv1KJmHq6LBpyEtD8wzuUZBTbUo3EHS8Zo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1155"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022DGsA6guvp\u002Bv1KJmHq6LBpyEtD8wzuUZBTbUo3EHS8Zo=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Aug 2025 08:19:11 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/AnimeTracker/AnimeTracker.qgolvgwoqp.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AnimeTracker.qgolvgwoqp.bundle.scp.css'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/AnimeTracker/AnimeTracker.obx5hbmp7v.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AnimeTracker.obx5hbmp7v.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qgolvgwoqp"},{"Name":"integrity","Value":"sha256-5tElesy7wmqNrNtZbZqQFHzKWbJ8gkkNrTBI8XrM1c8="},{"Name":"label","Value":"_content/AnimeTracker/AnimeTracker.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1081"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00225tElesy7wmqNrNtZbZqQFHzKWbJ8gkkNrTBI8XrM1c8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Aug 2025 15:03:19 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"obx5hbmp7v"},{"Name":"integrity","Value":"sha256-DGsA6guvp\u002Bv1KJmHq6LBpyEtD8wzuUZBTbUo3EHS8Zo="},{"Name":"label","Value":"_content/AnimeTracker/AnimeTracker.bundle.scp.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1155"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022DGsA6guvp\u002Bv1KJmHq6LBpyEtD8wzuUZBTbUo3EHS8Zo=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Aug 2025 08:19:11 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AnimeTracker/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
