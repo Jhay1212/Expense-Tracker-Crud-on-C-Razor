@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "xS629TatA8o=",
+  "success": true,
+  "projectFilePath": "/home/jhay/crud/AnimeTracker/AnimeTracker.csproj",
+  "expectedPackageFiles": [
+    "/home/jhay/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.8/microsoft.aspnetcore.app.ref.9.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}
