@@ -4,6 +4,7 @@ using ExpenseTracker.Models;
 using ExpenseTracker.Data;
 using System.Collections;
 using Microsoft.EntityFrameworkCore;
+using ExpenseTracker.Queries;
 
 
 namespace ExpenseTracker.Pages
@@ -12,6 +13,12 @@ namespace ExpenseTracker.Pages
     {
         private readonly ILogger<IndexModel> _logger;
         private readonly ExpensesContext _context;
+
+        [BindProperty(SupportsGet = true)] // get search value from form
+        public string Search { get; set; } // get the filter value
+        [BindProperty(SupportsGet = true)]
+
+        public string Filter { get; set; }
 
         public IList<Purchase> Purchase { get; set; } = new List<Purchase>();
 
@@ -24,16 +31,35 @@ namespace ExpenseTracker.Pages
         public async Task<IActionResult> OnGetAsync()
         {
             var UserId = HttpContext.Session.GetInt32("Id");
-
             if (UserId == null)
             {
                 return RedirectToPage("/User/Login");
             }
+            var _query = _context.Purchases.Where(p => p.UserId == UserId.Value ).AsQueryable();
+            
+            if (!string.IsNullOrEmpty(Search))
+            {
+                _query = _query.Where(p => p.ProductName.Contains(Search));
+            }
 
-            // get all purchases from logged in user
-            Purchase = await _context.Purchases
-                .Where(p => p.Id == HttpContext.Session.GetInt32("Id"))
-                .ToListAsync();
+            if (!string.IsNullOrEmpty(Filter))
+            {
+                switch (Filter.ToLower())
+                {
+                    case "price":
+                        _query = _query.OrderBy(p => p.ProductPrice);
+                        break;
+                    case "category":
+                        _query = _query.OrderBy(p => p.Category);
+                        break;
+                    case "date":
+                        _query = _query.OrderBy(p => p.DatePurchased);
+                        break;
+                }
+            }
+            // get all purchases from logged in user or based from filter or search
+            Purchase = await _query.ToListAsync();
+        
 
             return Page();
         }

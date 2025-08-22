@@ -1,90 +1,100 @@
 ﻿@page
-@model ExpenseTracker.Pages.IndexModel;
+@model ExpenseTracker.Pages.IndexModel
 @{
     ViewData["Title"] = "Home page";
     var username = HttpContext.Session.GetString("Username");
     var value = new List<double>();
     var labels = new List<string>();
 
-    
-    foreach(var item in Model.Purchase) {
-        if(!labels.Contains(item.Category)){
+    foreach (var item in Model.Purchase)
+    {
+        if (!labels.Contains(item.Category))
+        {
             labels.Add(item.Category);
             value.Add(item.ProductPrice);
         }
     }
 }
 
-<div class="text-center">
-    <h2 class="mb-2 underline">Welcome  @username</h1>
-
-    <div class="d-flex justify-content-between">
-        <div class="d-flex flex-column p-2 justify-content-around flex-shrink-1">
-        <a asp-page="/Purchases/Create">Add New Purchase</a>
-            <form method="get">
-    <div class="search-section">
-        <input type="search" placeholder="Search a product" name="search" value="@Request.Query["search"]"/>
-        <button type='submit' class="m-2 btn btn-primary">Search</button>
+<div class="container py-4">
+    <div class="text-center mb-4">
+        <h2 class="fw-bold">Welcome @username</h2>
     </div>
 
-    <div class='py-2'>
-        <label for="filter" class="d-block">Filter by</label>
-        <select name="filter" class="m-3 text-gray ">
-            <option value="price">Price</option>
-            <option value="category">Category</option>
-            <option value="date">Date</option>
-        </select>
-        <button type="submit" class="btn btn-primary m-2">Apply</button>
-    </div>
-</form>
-
+    <div class="row mb-4">
+        <div class="col-md-4 mb-3">
+            <div class="card shadow-sm h-100">
+                <div class="card-body d-flex flex-column">
+                    <a asp-page="/Purchases/Create" class="btn btn-primary mb-3">Add New Purchase</a>
+                    <form method="get" class="mb-3">
+                        <div class="input-group">
+                            <input type="search" class="form-control" asp-for="Search" placeholder="Search a product" name="search" value="@Request.Query["search"]">
+                            <button class="btn btn-outline-primary"  type="submit">Search</button>
+                        </div>
+                    </form>
+                    <form method="get">
+                        <label for="filter" class="form-label">Filter by</label>
+                        <select name="filter" asp-for="Filter" class="form-select mb-2">
+                            <option value="price">Price</option>
+                            <option value="category">Category</option>
+                            <option value="date">Date</option>
+                        </select>
+                        <button type="submit" class="btn btn-primary w-100">Apply</button>
+                    </form>
+                </div>
+            </div>
         </div>
 
-        @* table *@
-        <div id="content" class="flex flex-col flex-grow-1">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Product Name</th>
-                        <th>Product Price</th>
-                        <th>Quantity</th>
-                        <th>Category</th>
-                        <th>Total Price</th>
-                        <th>Date Purchased</th>
-                        <th>Details</th>
-                    </tr>
-                </thead>
-                @foreach (var item in Model.Purchase) {
-                    <tr>
-                        <td>@item.ProductName</td>
-                        <td>@item.ProductPrice</td>
-                        <td>@item.Quantity</td>
-                        <td>@item.Category</td>
+        <div class="col-md-8">
+            <div class="card shadow-sm mb-4">
+                <div class="card-body table-responsive">
+                    <table class="table table-striped table-hover align-middle">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Product Name</th>
+                                <th>Product Price</th>
+                                <th>Quantity</th>
+                                <th>Category</th>
+                                <th>Total Price</th>
+                                <th>Date Purchased</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Purchase)
+                            {
+                                <tr>
+                                    <td>@item.ProductName</td>
+                                    <td>@item.ProductPrice.ToString("C")</td>
+                                    <td>@item.Quantity</td>
+                                    <td>@item.Category</td>
+                                    <td>@item.TotalPrice.ToString("C")</td>
+                                    <td>@item.DatePurchased.ToShortDateString()</td>
+                                    <td>
+                                        <a asp-page="/Purchases/Detail" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary">Details</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
 
-                        <td>@item.TotalPrice</td>
-                        <td>@item.DatePurchased</td>
-                        <td>
-
-                        <a asp-page="/Purchases/Detail" asp-route-id="@item.Id">Details
-                        </a>
-                        </td>
-
-                    </tr>
-                }
-            </table>
-        </div>
-
-        <div class="h-1/2">  @* Canva and chart part*@
-        <canvas id="myChart" width="400"></canvas>
-            
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <canvas id="myChart" width="400"></canvas>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
+
+@* Chartjs section *@
 @section Scripts {
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
-        const ctx = document.getElementById('myChart'); // no need for .getContext("2d")
+        const ctx = document.getElementById('myChart');
 
         new Chart(ctx, {
             type: 'pie',
@@ -93,18 +103,18 @@
                 datasets: [{
                     label: 'Price',
                     data: @Html.Raw(System.Text.Json.JsonSerializer.Serialize(value)),
-                    backgroundColor: ['rgba(175, 12, 12, 0.5)', 'rgba(15, 22, 2552, 0.5)', 'rgba(150, 212, 152, 0.5)', 'rgba(115, 222, 252, 0.5)'],
+                    backgroundColor: [
+                        'rgba(175, 12, 12, 0.5)',
+                        'rgba(15, 22, 255, 0.5)',
+                        'rgba(150, 212, 152, 0.5)',
+                        'rgba(115, 222, 252, 0.5)'
+                    ],
                     borderColor: 'rgb(75, 192, 192)',
                     borderWidth: 1
                 }]
             },
             options: {
-                responsive: true,
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
+                responsive: true
             }
         });
     </script>
