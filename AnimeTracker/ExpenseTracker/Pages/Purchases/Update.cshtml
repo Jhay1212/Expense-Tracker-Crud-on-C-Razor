@@ -1,0 +1,45 @@
+@page "{id:int}"
+@model ExpenseTracker.Pages.UpdatePurchaseModel
+@{
+    ViewData["Title"] = "Update Purchase";
+}
+
+<h2>Update Purchase</h2>
+
+<form method="post" class="p-4 border rounded-3 shadow-sm bg-light">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <input type="hidden" asp-for="Purchase.Id" /> @*so that it wont give error and id will also be submitted*@
+
+    <div class="form-group">
+        <label asp-for="Purchase.ProductName"></label>
+        <input asp-for="Purchase.ProductName" class="form-control" />
+        <span asp-validation-for="Purchase.ProductName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Purchase.ProductPrice"></label>
+        <input asp-for="Purchase.ProductPrice" class="form-control" />
+        <span asp-validation-for="Purchase.ProductPrice" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Purchase.Quantity"></label>
+        <input asp-for="Purchase.Quantity" class="form-control" />
+        <span asp-validation-for="Purchase.Quantity" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Purchase.Category"></label>
+        <input asp-for="Purchase.Category" class="form-control" />
+        <span asp-validation-for="Purchase.Category" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Purchase.DatePurchased"></label>
+        <input asp-for="Purchase.DatePurchased" type="date" class="form-control" />
+        <span asp-validation-for="Purchase.DatePurchased" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">Save</button>
+    <a asp-page="/Index" class="btn btn-secondary">Cancel</a>
+</form>

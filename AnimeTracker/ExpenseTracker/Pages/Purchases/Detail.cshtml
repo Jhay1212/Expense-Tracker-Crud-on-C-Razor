@@ -1,0 +1,51 @@
+@page "{id:int}"
+@model ExpenseTracker.Pages.PurchaseDetailModel 
+@{
+    ViewData["Title"] = "Purchase Detail";
+
+
+}
+
+<h2>Purchase Details</h2>
+
+@if (Model.Purchase != null)
+{
+    <table class="table table-bordered">
+        <tr>
+            <th>Product Name</th>
+            <td>@Model.Purchase.ProductName</td>
+        </tr>
+        <tr>
+            <th>Price</th>
+            <td>@Model.Purchase.ProductPrice</td>
+        </tr>
+        <tr>
+            <th>Quantity</th>
+            <td>@Model.Purchase.Quantity</td>
+        </tr>
+        <tr>
+            <th>Category</th>
+            <td>@Model.Purchase.Category</td>
+        </tr>
+        <tr>
+            <th>Total Price</th>
+            <td>@Model.Purchase.TotalPrice</td>
+        </tr>
+        <tr>
+            <th>Date Purchased</th>
+            <td>@Model.Purchase.DatePurchased.ToShortDateString()</td>
+        </tr>
+    </table>
+
+    <a asp-page="/Index" class="btn btn-secondary">Back to List</a>
+    <a asp-page="/Purchases/Update" asp-route-id=@Model.Purchase.Id class="btn btn-success">Update</a>
+    <a asp-page="/Purchases/Delete" asp-route-id=@Model.Purchase.Id class="btn btn-danger">Delete</a>
+
+
+}
+else
+{
+    <div class="alert alert-warning">
+        Purchase not found.
+    </div>
+}

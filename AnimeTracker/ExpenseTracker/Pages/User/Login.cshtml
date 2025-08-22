@@ -2,5 +2,29 @@
 @model ExpenseTracker.Pages.UserLoginModel
 
 @{
-    <h1>Login</h1>
+    var messages = "";
 }
+    
+
+<div class="container">
+
+    <form method="post">
+
+        <div class="form-control">
+            <label asp-for="Username">Username</label>
+            <input type="text" asp-name="Username" asp-for="Username" id="username" placeholder="Enter your username">
+        </div>
+
+        <div class="form-control">
+            <label asp-for="Password">Password</label>
+            <input type="password" asp-name="Password" asp-for="Password" id="password" placeholder="Enter your Password">
+            
+            <div class="m-2 flex flex-col">
+
+            <button type="submit" class="btn btn-primary rounded w-25 h-25 my-2">Login</button>
+            <a asp-page="/User/Signup" class="d-block my-3 ">Dont have an account? Go to Signup</a>
+            </div>
+        </div>
+        <div asp-validation-summary="All" class="text-danger mb-3"></div>
+    </form> 
+</div>

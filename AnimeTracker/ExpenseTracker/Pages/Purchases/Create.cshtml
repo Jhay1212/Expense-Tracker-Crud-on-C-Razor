@@ -1,0 +1,36 @@
+@page 
+@model ExpenseTracker.Pages.CreateModel
+
+<h1 class="text-center my-4">Add a New Purchase</h1>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8">
+            <form method="post" class="p-4 border rounded-3 shadow-sm bg-light">
+                <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+                <div class="mb-3">
+                    <label asp-for="Purchase.ProductName" class="form-label"></label>
+                    <input asp-for="Purchase.ProductName" asp-name="Purchase.ProductName" class="form-control" />
+                </div>
+
+             <div class="mb-3">
+                <label asp-for="Purchase.ProductPrice" class="form-label"></label>
+                <input asp-for="Purchase.ProductPrice" type="number" step="0.01" class="form-control" />
+            </div>
+
+                <div class="mb-3">
+                    <label asp-for="Purchase.Quantity" class="form-label"></label>
+                    <input asp-for="Purchase.Quantity" type="number" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Purchase.Category" class="form-label"></label>
+                    <input asp-for="Purchase.Category" class="form-control" />
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
