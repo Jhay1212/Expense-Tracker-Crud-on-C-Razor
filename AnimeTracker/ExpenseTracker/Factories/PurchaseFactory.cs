@@ -4,7 +4,7 @@ namespace ExpenseTracker.Factories
     
     public class PurchaseFactory {
     public static Purchase CreatePurchase(int userId, string productName,
-    double productPrice, int quantity=1, string category="")
+    double productPrice, int quantity=1, string category="", UserModel? userModel = null)
         {
             return new Purchase
             {
@@ -12,7 +12,8 @@ namespace ExpenseTracker.Factories
                 ProductName = productName,
                 ProductPrice = productPrice,
                 Quantity = quantity,
-                Category = category
+                Category = category,
+                UserModel = userModel
             };
         }
     }

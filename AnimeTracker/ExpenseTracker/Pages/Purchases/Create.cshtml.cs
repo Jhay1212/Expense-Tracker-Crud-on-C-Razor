@@ -33,13 +33,14 @@ namespace ExpenseTracker.Pages
             if (!ModelState.IsValid) return Page();
 
             var userId = HttpContext.Session.GetInt32("Id");
-
+            var user = await  _context.Users.FindAsync(userId.Value);
             var p = PurchaseFactory.CreatePurchase(
                 userId.Value,
                 Purchase.ProductName,
                 Purchase.ProductPrice,
                 Purchase.Quantity,
-                Purchase.Category
+                Purchase.Category,
+                userModel: user
             );
 
             _context.Purchases.Add(p);

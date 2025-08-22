@@ -17,6 +17,8 @@ namespace ExpenseTracker.Models
 
         [Range(1, 999, ErrorMessage = "Quantity must be a valid number")]
         public int Quantity { get; set; } = 1;
+
+        
         public double TotalPrice
         {
             get { return Quantity * ProductPrice; } // set the default value to the actual total price 
