@@ -24,7 +24,7 @@ namespace ExpenseTracker.Models
 
         public double Budget { get; set; } = 100;
         public DateTime DateCreated { get; set; } = DateTime.Now;
-        public ICollection<Purchase> Purchases { get; }
+        public ICollection<Purchase> Purchases { get; } = new List<Purchase>();
         
 
     }

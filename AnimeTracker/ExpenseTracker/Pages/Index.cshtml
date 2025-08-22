@@ -2,8 +2,10 @@
 @model ExpenseTracker.Pages.IndexModel;
 @{
     ViewData["Title"] = "Home page";
+    var username = HttpContext.Session.GetString("Username");
     var value = new List<double>();
     var labels = new List<string>();
+
     
     foreach(var item in Model.Purchase) {
         if(!labels.Contains(item.Category)){
@@ -14,7 +16,7 @@
 }
 
 <div class="text-center">
-    <h2 class="mb-2 underline">Welcome  Username</h1>
+    <h2 class="mb-2 underline">Welcome  @username</h1>
 
     <div class="d-flex justify-content-between">
         <div class="d-flex flex-column p-2 justify-content-around flex-shrink-1">

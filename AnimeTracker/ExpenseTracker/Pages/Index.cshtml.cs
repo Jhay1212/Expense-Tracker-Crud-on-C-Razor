@@ -5,6 +5,7 @@ using ExpenseTracker.Data;
 using System.Collections;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace ExpenseTracker.Pages
 {
     public class IndexModel : PageModel
@@ -12,7 +13,7 @@ namespace ExpenseTracker.Pages
         private readonly ILogger<IndexModel> _logger;
         private readonly ExpensesContext _context;
 
-        public IList<Purchase> Purchases { get; set; } = new List<Purchase>();
+        public IList<Purchase> Purchase { get; set; } = new List<Purchase>();
 
         public IndexModel(ILogger<IndexModel> logger, ExpensesContext context)
         {
@@ -30,8 +31,8 @@ namespace ExpenseTracker.Pages
             }
 
             // get all purchases from logged in user
-            Purchases = await _context.Purchases
-                .Where(p => p.Id == UserId)
+            Purchase = await _context.Purchases
+                .Where(p => p.Id == HttpContext.Session.GetInt32("Id"))
                 .ToListAsync();
 
             return Page();

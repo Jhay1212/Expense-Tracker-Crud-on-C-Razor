@@ -19,10 +19,14 @@ namespace ExpenseTracker.Models
         public int Quantity { get; set; } = 1;
         public double TotalPrice
         {
-            get {return Quantity * ProductPrice; } // set the default value to the actual total price 
+            get { return Quantity * ProductPrice; } // set the default value to the actual total price 
         }
         [DataType(DataType.Date)]
         public DateOnly DatePurchased { get; set; }
+
+        public int UserId { get; set; }
+        
+        public UserModel? UserModel { get; set; } // for future queries or access
 
 
   

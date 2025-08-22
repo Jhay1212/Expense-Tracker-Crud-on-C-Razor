@@ -11,6 +11,8 @@ namespace ExpenseTracker.Pages
     public class CreateModel : PageModel
     {
         private readonly ExpensesContext _context;
+        public string? UserCookie { get; set; }
+
 
 
 
@@ -22,13 +24,18 @@ namespace ExpenseTracker.Pages
             _context = context;
         }
 
-        public void OnGet() {}
+        public void OnGet()
+        {
+        }
 
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid) return Page();
 
+            var userId = HttpContext.Session.GetInt32("Id");
+
             var p = PurchaseFactory.CreatePurchase(
+                userId.Value,
                 Purchase.ProductName,
                 Purchase.ProductPrice,
                 Purchase.Quantity,

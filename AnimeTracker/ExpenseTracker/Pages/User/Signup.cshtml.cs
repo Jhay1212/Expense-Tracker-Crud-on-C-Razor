@@ -46,7 +46,6 @@ namespace ExpenseTracker.Pages
             );
             _context.Add(user);
             await _context.SaveChangesAsync();
-            Console.WriteLine($"Account Created Successfully {Username} {Password}");
             return RedirectToPage("/Index");
 
         }
